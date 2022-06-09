@@ -30,12 +30,12 @@ module.exports = {
 		],
 	},
 	networks: {
-		// hardhat: {
-		// 	forking: {
-		// 		url: process.env.MORALIS_BSC_TESTNET_API_KEY_URL,
-		// 		blockNumber: 14390000,
-		// 	},
-		// },
+		hardhat: {
+			forking: {
+				url: process.env.MORALIS_BSC_TESTNET_API_KEY_URL,
+				blockNumber: 14390000,
+			},
+		},
 		rinkeby: {
 			url: process.env.ALCHEMY_RINKEBY_API_KEY_URL,
 			accounts: [process.env.PRIVATE_KEY],

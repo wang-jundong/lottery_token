@@ -26,7 +26,8 @@ const main = async () => {
 
 	let txn = await babyQuintContract.tradingStatus(true);
 	await txn.wait();
-	console.log("Trading Enable");
+	let tradingOpen = await babyQuintContract.tradingOpen();
+	console.log("Trading Status: ", tradingOpen);
 
 	txn = await babyQuintContract.approveMax(lotteryContract.address);
 	await txn.wait();

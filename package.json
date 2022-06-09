@@ -4,7 +4,7 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
+		"test": "npx hardhat run scripts/deploy.js --network hardhat",
 		"deploy": "npx hardhat run scripts/deploy.js --network rinkeby",
 		"verify": "npx hardhat verify --constructor-args arguments.js 0xb59954A2b16CBCCe777Df609931ee0D1Bd2cf2BC --network rinkeby"
 	},
